@@ -7,21 +7,34 @@
         <li><a href="#">Features</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Contact</a></li>
+        <li><a href="#">Sign in</a></li>
+        <li><a href="#">Logout</a></li>
       </ul>
-      <%= image_tag "https://mdbootstrap.com/img/new/avatars/4.jpg", :class => "user_img" %>
+      <%= image_tag "https://mdbootstrap.com/img/new/avatars/4.jpg", :class => "user_img", onclick: "toggleMenu()"%>
 
-      <div class="sub-menu-wrap">
+      <div class="sub-menu-wrap" id="subMenu">
         <div class="sub-menu">
           <div class="user-info">
             <%= image_tag "https://mdbootstrap.com/img/new/avatars/4.jpg", :class => "user1_img" %>
-            <h4>Chhomtythya Norong</h4>
+            <h4>Viet Vu</h4>
           </div>
            <hr>
             <a href="#" class="sub-menu-link">
-            <span class="material-symbols-outlined">account_box</span>
+            <%= image_tag "manage_accounts.png", :class => "link-logo" %>
             <p>Edit profile</p><span>></span>
             </a>
-
+            <a href="#" class="sub-menu-link">
+            <%= image_tag "setting.png", :class => "link-logo" %>
+            <p>Settings & Privacy</p><span>></span>
+            </a>
+            <a href="#" class="sub-menu-link">
+            <%= image_tag "help.png", :class => "link-logo" %>
+            <p>Helps & Supports</p><span>></span>
+            </a>
+            <a href="#" class="sub-menu-link">
+            <%= image_tag "logout.png", :class => "link-logo" %>
+            <p>Logout</p><span>></span>
+            </a>
         </div>
       </div>
     </nav>

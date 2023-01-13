@@ -66,6 +66,13 @@ position: absolute;
 top: 100%;
 right: 10%;
 width: 320px;
+max-height: 0px;
+overflow: hidden;
+transition: max-height 0.5s;
+}
+
+.profile .sub-menu-wrap.open-menu {
+  max-height: 400px;
 }
 
 .profile .sub-menu {
@@ -96,6 +103,34 @@ width: 320px;
   background: blue;
   margin: 15px 0 10px;
 }
-.profile .material-icons{
 
+.profile .sub-menu-link {
+  display: flex;
+  align-items: center;
+  color: #525252;
+  margin: 12px 0;
+}
+
+.profile .sub-menu-link p {
+  width: 100%;
+}
+
+.profile .sub-menu-link .link-logo {
+  width: 40px;
+  background: #e2d6d6;
+  border-radius: 50%;
+  padding: 8px;
+  margin-right: 15px;
+}
+
+.profile .sub-menu-link span {
+  transition: transform 0.5s;
+}
+
+.profile .sub-menu-link:hover span{
+  transform: translate(5px);
+}
+
+.profile .sub-menu-link:hover p {
+  font-weight: 600;
 }
