@@ -1,5 +1,6 @@
 require "json"
 require "open-uri"
+require "material_icons"
 class PagesController < ApplicationController
   skip_before_action :authenticate_user!, only: [ :home ]
 
@@ -20,3 +21,12 @@ class PagesController < ApplicationController
     end
   end
 end
+
+  def popup
+  end
+
+  def popform
+  end
+
+  def profile
+  end

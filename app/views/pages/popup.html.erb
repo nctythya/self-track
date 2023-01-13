@@ -1,0 +1,25 @@
+<body class="popup">
+  <div class="container-pop">
+    <button type="submit" class="btn" onclick="openPopup()">Submit</button>
+    <div class="popup-btn" id="popup">
+    <%= image_tag "tick.png", :class => "img_tag" %>
+    <h2>Thank you</h2>
+    <p>Your details has been successfully submitted. Thanks!</p>
+    <button type="button" class="button" onclick="closePopup()">OK</button>
+  </div>
+  </div>
+
+  <script>
+    let popup = document.getElementById("popup");
+
+    function openPopup() {
+      open-popup.classList.add("open-popup");
+    }
+
+    function closePopup() {
+      open-popup.classList.remove("open-popup");
+    }
+
+  </script>
+
+</body>
